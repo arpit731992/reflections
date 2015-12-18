@@ -1,0 +1,51 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+	
+	A symbol of dash(-) and plus(+) indicated :
+    - meaning the line has been deleted or changed to
+    + to this line
+
+    Bug was clarified using command :
+    
+    diff -u old_file new_file
+    -u means that it will provide with the dash and plus sign hance more clear.
+    bug was erased while comapring new lines with the old one with - and + sign.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    we can see through the changes made and also erase possible errors in the recent like typo.
+    we can see how the file has been changed and what were the changes made to it and their efficiency.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Pros :
+    1.we can choose when to commit the code i.e, we don't have to rely on any version control
+      it is more satisfiable.
+    2.we can save changes according to the changes done by us, like correcting error ,adding a new function or layout.
+
+    cons :
+    1.automatically save can sometime save the hardwork if we forget to commit or take too many shorts or too many long commits.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    It stores the time and the changes for each file at a particular time.If the files are related to each other storing multiple files at once is very usefull.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    git log to print the commits with their respective ID's of the repository/folder.
+    git diff to differentiate two commits in terms of lines added removed changes made.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    because if we break something we can narrow it down to hte commit in which we introduced that error or break and
+    we can either make changes in that commit or start with the commit before it in which the error was not introduced.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I want to try git for version control as in to save(commit) work explore whole new functions and if failure occurs i can always go back to earlier version of control.
+    that is commits id's.
