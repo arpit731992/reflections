@@ -1,0 +1,12 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	we need to initialize a repository or directory or folder to to tell git to start tracking the commits
+	that will  be added later. so basically to start trackin the history of the files in repository.
+	git init to initialize and git status to check status of files and commits.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+	we can add files to the staging area which is between working directory(Hardrive) and repository.
+	when we havn't added anything to the staging area, git status will show all the files are untracked and
+	there is no commit so its waiting for initial commit.
+	when we add a file or two it goes to the staging area, which then goes to the repository when commited.
