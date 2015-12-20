@@ -1,4 +1,0 @@
-What happens when you initialize a repository? Why do you need to do it?
-	we need to initialize a repository or directory or folder to to tell git to start tracking the commits
-	that will  be added later. so basically to start trackin the history of the files in repository.
-	git init to initialize and git status to check status of files and commits.
