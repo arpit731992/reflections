@@ -10,3 +10,45 @@ How is the staging area different from the working directory and the repository?
 	when we havn't added anything to the staging area, git status will show all the files are untracked and
 	there is no commit so its waiting for initial commit.
 	when we add a file or two it goes to the staging area, which then goes to the repository when commited.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+	we can use git status to see that and also we can use git diff(to see difference between staging area followed by working directory) 
+	and git diff --staged(to see difference between staging area and most recent commit).
+	we can reset all the changes in staging area and working directory by git reset -- hard.
+	
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	
+	master branch is the main branch that git creates itself.
+	we can check the branches by GIT BRANCH.
+	we can create other branches byt GIT BRANCH BRANCH_NAME (This will include the log until it is created)
+	* shows the branch your are currently on.
+	and GIT CHECKOUT BRANCH_NAME will change the branch to work on.
+	It is useful making experiments that should not affect the main project in master branch.
+
+How do the diagrams help you visualize the branch structure?
+	
+	git log --graph --oneline first_branch_name second_branch_name(to see the branches in linear way more understanding)
+	the purpose of reachability was clear with diagrams and whenever we checkout a commit in a branch name 
+	we come in detached head state, i.e any other commit will not belong to the parent branch so we can give it a branch name 
+	and check it out both with    git checkout -b new_branch_name.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+	the two branches are merged as one with      git merge branch1 branch2        
+	(also it merges the branch on which you are working so if you are on branch1 you can just type git merge branch2 to merge branch1 and branch2).
+	The master always moves from the master to the new merge branch commit.
+	you can delete the other blranch by git branch -d branch_name this will only dlee the label for branch.
+
+	Also      git show commit_id     shows the diff between the commit and its parent commit. because after merging, the commits from two branches assemble 
+	in a timestamp order so to compare it with its parent you can use this command.  
+	
+	git merge --abort     to abort the merge
+	git log -n 1     to print the log with the number of commits =1(can be any number)
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+	
+	git cannot merge when there are changes in a file referring to a same function with same name. it is not possibe to decide to choose which ones to use.
+	we can open the file and solve it and then add and commit it into a new commit that is merging.
+	it will be very tedious to do that for every other problem so mostly git chooses the best alternative for you only in rare cases such conditions arrives 
+	when the modications are on the functions with same name which do not have any diff in runtime and resources.
