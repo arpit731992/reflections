@@ -25,3 +25,8 @@ What is the benefit of having a copy of the last known state of the remote store
   in case when there is a new commit in both github and local machine, where both commits are different
   to get a merged copy of both we can use git fetch followed by git merge origin/master master or git pull origin master.
   
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+  i can always without git or github i would have to talk to the person and make changes in their presence
+  which will be very difficult for large projects.
+  but done that, the update can be done easily with common interaction and conversation.
